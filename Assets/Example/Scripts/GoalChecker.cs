@@ -25,7 +25,7 @@ public class GoalChecker : MonoBehaviour {
 		goalText.enabled = false;
 		startTime = DateTime.Now;
 		nextButton.SetActive(false);
-		//twitterButton.SetActive(false);
+		twitterButton.SetActive(false);
 	}
 
 	void Update()
@@ -84,7 +84,7 @@ public class GoalChecker : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(3.0f);
 		nextButton.SetActive(true);
-		//twitterButton.SetActive(true);
+		twitterButton.SetActive(true);
 	}
 
 	public void Tweet()
